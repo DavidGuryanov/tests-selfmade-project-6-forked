@@ -65,7 +65,7 @@ const colorScheme = async (a) => {
       await b.close(),
       !i && {
         id: "notDarkColorScheme",
-        values: `Ожидал цвета: ${g}, получил: ${h}`,
+        info: `Ожидал цвета: ${g}, получил: ${h}`,
       }
     );
   },

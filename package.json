@@ -18,6 +18,6 @@
   "dependencies": {
     "image-palette": "^2.1.0",
     "image-pixels": "^2.2.2",
-    "lib-verstka-tests": "git+https://github.com/Yandex-Practicum/lib-verstka-tests-public.git"
+    "lib-verstka-tests": "git+https://github.com/DavidGuryanov/lib-verstka-tests-public.git"
   }
 }
