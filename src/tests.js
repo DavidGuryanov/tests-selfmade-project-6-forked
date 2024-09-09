@@ -41,6 +41,7 @@ const colorScheme = async (a) => {
       g = sortColors(e),
       h = sortColors(f),
       i = g.every((a, b) => compareColors(a, h[b], 40));
+    console.log("colors:", f, h);
     return (
       await compareLayout(
         a,
