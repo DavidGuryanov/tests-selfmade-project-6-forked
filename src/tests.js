@@ -35,12 +35,13 @@ const colorScheme = async (a) => {
       await c.screenshot({ path: "layout-dark.jpg", fullPage: !0 });
     const { colors: e } = palette(
         await pixels("./layout-canonical-dark.jpg"),
-        4,
+        10,
       ),
-      { colors: f } = palette(await pixels("./layout-dark.jpg"), 4),
+      { colors: f } = palette(await pixels("./layout-dark.jpg"), 10),
       g = sortColors(e),
       h = sortColors(f),
       i = g.every((a, b) => compareColors(a, h[b], 40));
+    console.log("colors:", e, f, g, h, i);
     return (
       await compareLayout(
         a,
