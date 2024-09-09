@@ -5,7 +5,7 @@ import {
   hasElementBySelectors,
   compareLayout,
 } from "lib-verstka-tests";
-import { getStyle, sortColors, compareColors } from "./utils.js";
+import { getStyle, sortColors, compareColors, rgbaToHex } from "./utils.js";
 
 const colorScheme = async (a) => {
     const b = await hasElementBySelectors(
@@ -66,7 +66,7 @@ const colorScheme = async (a) => {
       await b.close(),
       !i && {
         id: "notDarkColorScheme",
-        info: `Ожидал цвета: ${e}, получил: ${f}`,
+        info: `Ожидал цвета: ${g.map(([r, g, b, a]) => rgbaToHex(r, g, b, a))}, \r\nполучил: ${h.map(([r, g, b, a]) => rgbaToHex(r, g, b, a))}`,
       }
     );
   },
