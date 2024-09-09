@@ -15,9 +15,7 @@ const getStyle = async (a, b, c) => {
       r.toString(16),
       g.toString(16),
       b.toString(16),
-      Math.round(a * 255)
-        .toString(16)
-        .substring(0, 2),
+      a === 255 ? "" : a.toString(16).substring(0, 2),
     ];
 
     outParts.forEach(function (part, i) {
