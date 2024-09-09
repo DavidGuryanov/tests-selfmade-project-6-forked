@@ -65,7 +65,7 @@ const colorScheme = async (a) => {
       await b.close(),
       !i && {
         id: "notDarkColorScheme",
-        info: `Ожидал цвета: ${g.map(([r, g, b, a]) => rgbaToHex(r, g, b, a))}, \r\nполучил: ${h.map(([r, g, b, a]) => rgbaToHex(r, g, b, a))}`,
+        info: `Ожидал: ${g.map(([r, g, b, a]) => rgbaToHex(r, g, b, a)).join(" ")}\r\nполучил: ${h.map(([r, g, b, a]) => rgbaToHex(r, g, b, a)).join(" ")}`,
       }
     );
   },
